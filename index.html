@@ -5,61 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../root/css/basic.css">
-    <title>Document</title>
+    <title>Seba Minaya</title>
 </head>
 
 <body>
     <header>
-        <a href="../root/index.html">
-            <img src="" alt="">
-        </a>
-        <ul>
-            <li>
-                <a href="../root/pages/why.html">WHY</a>
-            </li>
-            <li>
-                <a href="../root/pages/portfolio.html">PORTFOLIO</a>
-            </li>
-            <li>
-                <a href="../root/pages/ds.html">DATA SCIENCE</a>
-            </li>
-            <li>
-                <a href="../root/pages/wd.html">WEB DEVELOPMENT</a>
-            </li>
-            <li>
-                <a href="../root/pages/blog.html">BLOG</a>
-            </li>
-            <li>
-                <a href="../root/pages/contact.html">CONTACT</a>
-            </li>
-        </ul>
+        <div class="topnav">
+            <a class="active" href="../index.html"><img src="" alt="Logo"></a>
+            <div class="topnav-right">
+                <a href="pages/about.html">About</a>
+                <a href="pages/portfolio.html">Portfolio</a>
+                <a href="pages/blog.html">Blog</a>
+                <a href="pages/contact.html">Contact</a>
+            </div>
+        </div>
     </header>
 
     <main>
         <div id="LP-beginning">
-
+            <h1>Title Landing Page</h1>
         </div>
         <div id="LP-why">
-
+            <h2>Subtitle 1: Why</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet cum deleniti, eaque magni maxime
+                nobis placeat sunt suscipit. Esse et libero odit optio placeat tempora. Adipisci assumenda, ipsam?
+                Iste?</p>
         </div>
         <div id="LP-portfolio">
+            <h2>Subtitle 2: Portfolio</h2>
             <div id="LP-data-science">
-
+                <h3>Inner 1: Data Portfolio Highlight</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem enim nemo non omnis pariatur sit
+                    voluptatem. Aliquid blanditiis consectetur cum eos, illum labore minus, nisi nobis, nostrum
+                    praesentium velit vero?</p>
             </div>
             <div id="LP-web-development">
-
+                <h3>Inner 2: FS Dev Portfolio Highlight</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad assumenda autem harum hic iure laborum
+                    numquam quidem quis, tempora tempore veniam veritatis vitae. Accusantium dolor incidunt ipsum qui
+                    repudiandae voluptatibus!</p>
             </div>
         </div>
         <div id="LP-blog">
-
+            <h2>Subtitle 3: Blog</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A autem corporis ducimus earum enim ex illo
+                ipsam laboriosam libero, nisi non perferendis quidem quisquam rem rerum sed suscipit tenetur, unde.</p>
         </div>
         <div id="LP-contact">
-
+            <h2>Subtitle 4: Contact</h2>
+            <form action="mailto:contact@sebaminaya.com" method="get" enctype="text/plain">
+                <div>
+                    <label for="name">Name:
+                        <input type="text" name="name" id="name" />
+                    </label>
+                </div>
+                <div>
+                    <label for="email">Email:
+                        <input type="text" name="email" id="email" />
+                    </label>
+                </div>
+                <div>
+                    <label>Comments:</label>
+                    <br />
+                    <label>
+                        <textarea name="comments" rows="12" cols="35">Tell me what you need.</textarea>
+                    </label>
+                </div>
+                <div>
+                    <input type="submit" name="submit" value="Send" />
+                    <input type="reset" name="reset" value="Clear Form" />
+                </div>
+            </form>
         </div>
     </main>
 
     <footer>
-
+        <p style="color: white">© 2021 Sebastian Minaya</p>
     </footer>
 </body>
 
