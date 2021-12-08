@@ -15,7 +15,7 @@ I created this repo to track and show all my work done to the course's tutor and
 ## File Descriptions <a name="files"></a>
 
 In this repo you will find all the pages, assets, stylesheets and scripts of my project which currently looks like this:
-![Current Repo Structure](root/images/root-structure.png "San Juan Mountains")
+![Current Repo Structure](images/root_structure.png "San Juan Mountains")
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
 
