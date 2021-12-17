@@ -41,12 +41,6 @@ header {
 main {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-main div {
-    margin: 2vw
 }
 
 main h1 {
@@ -58,7 +52,13 @@ main h1 {
 main h2 {
     font-family: 'Roboto Condensed';
     font-weight: 600;
-    font-size: 3vw;
+    font-size: 4vw;
+}
+
+main h3 {
+    font-family: 'Roboto Condensed';
+    font-weight: 600;
+    font-size: 2vw;
 }
 
 main p {
@@ -66,9 +66,25 @@ main p {
     padding: 0.5vw 0 0.5vw 0;
 }
 
+button {
+    margin-top: 1vw;
+    padding: 0.5vw 1vw 0.5vw 1vw;
+    font-weight: bold;
+    font-family: 'Roboto';
+    font-size: 1vw;
+}
+
+form {
+    font-family: 'Roboto';
+}
+
+textarea {
+    font-family: 'Roboto';
+}
+
 #lp-headline {
-    display: flex;
-    flex-direction: row;
+    background-color: #2F4858;
+    padding: 5vw 4vw 5vw 4vw;
 }
 
 #lp-headline-text {
@@ -76,21 +92,250 @@ main p {
     margin-right: auto;
 }
 
-#lp-headline-media {
-    margin-right: auto;
+#lp-portfolio {
+    background-color: #ffffff;
+    padding: 5vw 4vw 5vw 4vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
-#lp-headline-media img {
-    width: 25vw;
+#lp-portfolio h2 {
+    width: 35vw;
+    text-align: center;
 }
 
-#lp-headline-cta {
-    margin-top: 1vw;
-    padding: 0.5vw 0.4vw 0.5vw 0.4vw;
-    width: 9vw;
-    font-weight: bold;
-    font-family: 'Roboto';
-    font-size: 1vw;
+#lp-project-hl {
+    background-color: darkgray;
+    padding: 5vw 4vw 5vw 4vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#lp-project-hl p {
+    width: 40vw;
+}
+
+#lp-contact {
+    background-color: #2F4858;
+    padding: 5vw 4vw 5vw 4vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#lp-contact h1 {
+    width: 40vw;
+    text-align: center;
+}
+
+#about-father {
+    display: grid;
+    grid-template-areas:
+     "greet img"
+     "desc desc"
+     "cv cv";
+    grid-template-rows: 2fr 2fr 1fr;
+    grid-template-columns: 60% auto;
+    background-color: #2F4858;
+    padding: 5vw 4vw 5vw 4vw;
+}
+
+section#greet {
+    grid-area: greet;
+
+}
+
+section#img {
+    grid-area: img;
+    margin: auto;
+}
+
+section#desc {
+    grid-area: desc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#cv {
+    grid-area: cv;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+#services-father {
+    display: grid;
+    grid-template-areas:
+     "sv1 sv2";
+    grid-template-rows: 1fr;
+    grid-template-columns: 50% 50%;
+    background-color: #2F4858;
+    padding: 5vw 4vw 5vw 4vw;
+}
+
+section#sv1 {
+    grid-area: sv1;
+    padding: 5vw
+}
+
+section#sv2 {
+    grid-area: sv2;
+    padding: 5vw
+}
+
+#portfolio-father {
+    display: grid;
+    grid-template-areas:
+     "pj1 pj2"
+     "contact contact";
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: 50% auto;
+    background-color: #2F4858;
+    padding: 5vw 4vw 5vw 4vw;
+}
+
+section#pj1 {
+    grid-area: pj1;
+    padding: 5vw
+}
+
+section#pj1 div a {
+    color: black;
+}
+
+section#pj2 {
+    grid-area: pj2;
+    padding: 5vw
+}
+
+section#pj2 div a {
+    color: black;
+}
+
+section#contact {
+    grid-area: contact;
+
+}
+
+section#contact div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.project-wrapper {
+    display: grid;
+    grid-template-areas:
+     "title"
+     "content"
+     "media"
+     "links";
+    grid-template-rows: 2fr 3fr 3fr 2fr;
+    grid-template-columns: 100%;
+    background-color: #2F4858;
+    padding: 5vw 4vw 5vw 4vw;
+}
+
+hr.solid {
+    border-top: 3px solid;
+    border-bottom: 3px solid #2F4858;
+    border-right: 3px solid #2F4858;
+    border-left: 3px solid #2F4858;
+}
+
+section.project-title {
+    grid-area: title;
+}
+
+section.project-content {
+    grid-area: content;
+}
+
+section.project-content a {
+    color: black;
+}
+
+section.project-media {
+    grid-area: media;
+}
+
+section.project-links {
+    grid-area: links;
+}
+
+#past-project {
+    display: flex;
+    justify-content: left;
+    color: black;
+}
+
+#next-project {
+    display: flex;
+    justify-content: right;
+    color: black;
+}
+
+#blog-container {
+    background-color: #2F4858;
+    padding: 5vw 4vw 5vw 4vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#blog-container h1 {
+    padding: 5vw;
+}
+
+#medium-widget {
+    font-family: Roboto;
+    background-color: #ffffff;
+    padding: 2vw 2vw 2vw 2vw;
+    border-radius: 1vw;
+}
+
+#contact-father {
+    display: grid;
+    grid-template-areas:
+     "info form";
+    grid-template-rows: 1fr ;
+    grid-template-columns: 50% 50%;
+    background-color: #2F4858;
+    padding: 5vw 4vw 5vw 4vw;
+}
+
+section#info {
+    grid-area: info;
+}
+
+section#info h2 {
+    padding: 5vw 0 0 0;
+}
+
+section#form {
+    grid-area: form;
+}
+
+section#form label {
+    padding: 1vw
+}
+
+section#form input {
+    padding: 1vw
+}
+
+section#form textarea {
+    padding: 1vw;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
 }
 
 #rss-logo-insta {

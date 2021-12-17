@@ -11,26 +11,39 @@
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a class="active" href="../index.html"><img src="#" alt="Logo"></a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./portfolio.html">Portfolio</a></li>
-                <li><a href="./blog.html">Blog</a></li>
-                <li><a href="./contact.html">Contact</a></li>
+            <ul class="nav-bar">
+                <li id="logo" class="nav-button"><a href="../index.html"><img src="#" alt="Logo"></a></li>
+                <li class="nav-button"><a href="about.html">About</a></li>
+                <li class="nav-button"><a href="portfolio.html">Portfolio</a></li>
+                <li class="nav-button"><a href="services.html">Services</a></li>
+                <li class="nav-button"><a href="#">Blog</a></li>
+                <li class="nav-button"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-
+        <div id="blog-container">
+            <h1>Medium Blog Post's</h1>
+            <div id="medium-widget"></div>
+            <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+            <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@sebaminaya","postsPerLine":2,"limit":10,"picture":"small","fields":["description","author","claps"],"ratio":"original"}})</script>
+        </div>
     </main>
 
     <footer>
-        <a href="#"><img id="rss-logo-insta" src="../images/instagram.png" alt="insta logo"></a>
-        <a href="#"><img id="rss-logo-linkedin" src="../images/linkedin.png" alt="linkedin logo"></a>
-        <br>
-        <a href="./contact.html">Contact</a>
-        <p>© 2021 Sebastian Minaya</p>
+        <div id="footer-menu">
+            <a href="">About</a>
+            <a href="">Portfolio</a>
+            <a href="">Services</a>
+            <a href="">Blog</a>
+            <a href="">Contact</a>
+        </div>
+        <div>
+            <p>© 2021 Sebastian Minaya</p>
+            <a href="#"><img id="rss-logo-insta" src="#" alt="insta logo"></a>
+            <a href="#"><img id="rss-logo-linkedin" src="#" alt="linkedin logo"></a>
+        </div>
     </footer>
 </body>
 

@@ -11,29 +11,57 @@
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a class="active" href="../index.html"><img src="#" alt="Logo"></a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./portfolio.html">Portfolio</a></li>
-                <li><a href="./blog.html">Blog</a></li>
-                <li><a href="./contact.html">Contact</a></li>
+            <ul class="nav-bar">
+                <li id="logo" class="nav-button"><a href="../index.html"><img src="#" alt="Logo"></a></li>
+                <li class="nav-button"><a href="about.html">About</a></li>
+                <li class="nav-button"><a href="#">Portfolio</a></li>
+                <li class="nav-button"><a href="services.html">Services</a></li>
+                <li class="nav-button"><a href="blog.html">Blog</a></li>
+                <li class="nav-button"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <ul>
-            <a href="./portfolio/lending_case.html"><li>Lending Case Study</li></a>
-            <a href="./portfolio/ml_pipeline.html"><li>ML Pipeline</li></a>
-        </ul>
+        <div id="portfolio-father">
+            <section id="pj1">
+                <div>
+                    <a href="portfolio/ml_pipeline.html">
+                        <img src="#" alt="ML Pipeline Project">
+                        <h3>ML Pipeline of Disaster Response Tweets</h3>
+                    </a>
+                </div>
+            </section>
+            <section id="pj2">
+                <div>
+                    <a href="portfolio/lending_case.html">
+                        <img src="#" alt="Lending Case Study">
+                        <h3>Lending Club Case Study</h3>
+                    </a>
+                </div>
+            </section>
+            <section id="contact">
+                <div>
+                    <h1>Let’s create something amazing.</h1>
+                    <button>portfolio.htmlContact me.</button>
+                </div>
+            </section>
+        </div>
     </main>
 
     <footer>
-        <a href="#"><img id="rss-logo-insta" src="../images/instagram.png" alt="insta logo"></a>
-        <a href="#"><img id="rss-logo-linkedin" src="../images/linkedin.png" alt="linkedin logo"></a>
-        <br>
-        <a href="./contact.html">Contact</a>
-        <p>© 2021 Sebastian Minaya</p>
+        <div id="footer-menu">
+            <a href="">About</a>
+            <a href="">Portfolio</a>
+            <a href="">Services</a>
+            <a href="">Blog</a>
+            <a href="">Contact</a>
+        </div>
+        <div>
+            <p>© 2021 Sebastian Minaya</p>
+            <a href="#"><img id="rss-logo-insta" src="#" alt="insta logo"></a>
+            <a href="#"><img id="rss-logo-linkedin" src="#" alt="linkedin logo"></a>
+        </div>
     </footer>
 </body>
 
